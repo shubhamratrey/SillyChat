@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "477485895371",
+    "firebase_url": "https://realchat-sillylife.firebaseio.com",
+    "project_id": "realchat-sillylife",
+    "storage_bucket": "realchat-sillylife.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477485895371:android:cb56a7d056ba4167",
+        "android_client_info": {
+          "package_name": "alessandro.firebaseandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477485895371-gv4e2gub8ht5a6ggocr8kpr0i27fbtjh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "alessandro.firebaseandroid",
+            "certificate_hash": "8a9fc92efc76a706b0333e511c094003bbc4e15f"
+          }
+        },
+        {
+          "client_id": "477485895371-vns6ttg3v3tt144ef6i301bg63lh1ln5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0AXxQLelVcoWD04B2ykDUlDiO_MvZnGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477485895371-vns6ttg3v3tt144ef6i301bg63lh1ln5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477485895371:android:6f52ef1b8cfeec73",
+        "android_client_info": {
+          "package_name": "com.sillylife.realchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477485895371-jiq07ej8ou9dvjrsfgnj9lkae71hdcej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sillylife.realchat",
+            "certificate_hash": "8a9fc92efc76a706b0333e511c094003bbc4e15f"
+          }
+        },
+        {
+          "client_id": "477485895371-vns6ttg3v3tt144ef6i301bg63lh1ln5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0AXxQLelVcoWD04B2ykDUlDiO_MvZnGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477485895371-vns6ttg3v3tt144ef6i301bg63lh1ln5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
