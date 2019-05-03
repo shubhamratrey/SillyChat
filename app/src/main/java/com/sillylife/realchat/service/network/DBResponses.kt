@@ -28,6 +28,7 @@ class DBResponses {
     private val uid = FirebaseAuth.getInstance().currentUser?.uid
 
     fun getSelfProfile(requestCallbacks: DbCallbacks) {
+        val uid = FirebaseAuth.getInstance().currentUser?.uid
         query = FirebaseDatabase.getInstance().reference.child(ApiConstants.USERS_PROFILE).child(uid!!)
         startListener()
         mRequestCallbacks = requestCallbacks
