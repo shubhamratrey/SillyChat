@@ -11,7 +11,7 @@ object FragmentHelper {
 
     const val HOME = "home"
     const val LIBRARY = "library"
-    const val RADIO = "radio"
+    const val GROUP = "group"
     const val PROFILE = "profile"
     const val TO_CHANNEL = "to_channel"
     const val HOME_TO_CHANNEL = "home_to_channel"
