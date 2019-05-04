@@ -23,12 +23,12 @@ class UpdateDatabase {
     private val time = Calendar.getInstance().time.time.toString()
 
 
-    fun updateUserProfile(userProfile: UserProfile) {
+    fun updateUserProfile(userProfile: User) {
         val myRef = FirebaseDatabase.getInstance().reference
         myRef.child(ApiConstants.USERS_PROFILE).child(uid).setValue(userProfile)
     }
 
-    fun sendMessages(otherUserProfile: UserProfile, selfUserProfile: UserProfile, convMessage: String, messageType: String) {
+    fun sendMessages(otherUserProfile: User, selfUserProfile: User, convMessage: String, messageType: String) {
         val myRef = FirebaseDatabase.getInstance().reference
         val selfKey = getConversationKey(uid, otherUserProfile.userId!!)
         val otherKey = getConversationKey(otherUserProfile.userId!!, uid)

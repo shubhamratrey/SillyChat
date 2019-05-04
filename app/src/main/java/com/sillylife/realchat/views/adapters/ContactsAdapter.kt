@@ -9,12 +9,12 @@ import android.widget.Filter
 import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView
 import com.sillylife.realchat.R
-import com.sillylife.realchat.models.UserProfile
+import com.sillylife.realchat.models.User
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.item_contact.*
 import java.util.*
 
-class ContactsAdapter(private val mContext: Context?, var mContactList: ArrayList<UserProfile>, val listener: (Any) -> Unit) : RecyclerView.Adapter<ContactsAdapter.ViewHolder>(), Filterable {
+class ContactsAdapter(private val mContext: Context?, var mContactList: ArrayList<User>, val listener: (Any) -> Unit) : RecyclerView.Adapter<ContactsAdapter.ViewHolder>(), Filterable {
 
     private var valueFilter: ContactsAdapter.ValueFilter? = null
 
@@ -48,7 +48,7 @@ class ContactsAdapter(private val mContext: Context?, var mContactList: ArrayLis
 
     inner class ValueFilter : Filter() {
         override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
-            mContactList = results!!.values as ArrayList<UserProfile>
+            mContactList = results!!.values as ArrayList<User>
             notifyDataSetChanged()
         }
 
@@ -58,7 +58,7 @@ class ContactsAdapter(private val mContext: Context?, var mContactList: ArrayLis
                 filterResults.count = mContactList.size
                 filterResults.values = mContactList
             } else {
-                val filterList: ArrayList<UserProfile> = ArrayList<UserProfile>()
+                val filterList: ArrayList<User> = ArrayList<User>()
                 for (item in mContactList) {
                     if (item.userName?.contains(constraint!!, ignoreCase = true)!!) {
                         filterList.add(item)

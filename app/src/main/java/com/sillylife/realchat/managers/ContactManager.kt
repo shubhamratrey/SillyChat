@@ -3,7 +3,7 @@ package com.sillylife.realchat.managers
 import android.content.Context
 import android.net.Uri
 import android.provider.ContactsContract
-import com.sillylife.realchat.models.UserProfile
+import com.sillylife.realchat.models.User
 import java.util.*
 
 
@@ -46,13 +46,13 @@ object ContactManager {
         return number
     }
 
-    fun removeDuplicates(list: ArrayList<UserProfile>): ArrayList<UserProfile> {
-        val items: ArrayList<UserProfile> = ArrayList()
+    fun removeDuplicates(list: ArrayList<User>): ArrayList<User> {
+        val items: ArrayList<User> = ArrayList()
         if (list.isEmpty()) {
             return items
         }
-        val set = TreeSet(Comparator<UserProfile> { o1, o2 ->
-            if ((o1 as UserProfile).userNumber.equals((o2 as UserProfile).userNumber)) {
+        val set = TreeSet(Comparator<User> { o1, o2 ->
+            if ((o1 as User).userNumber.equals((o2 as User).userNumber)) {
                 0
             } else 1
         })

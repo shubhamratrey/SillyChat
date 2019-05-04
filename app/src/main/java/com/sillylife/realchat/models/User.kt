@@ -3,7 +3,7 @@ package com.sillylife.realchat.models
 import android.os.Parcel
 import android.os.Parcelable
 
-class UserProfile() : Parcelable {
+class User() : Parcelable {
 
     var userNumber: String? = null
     var userName: String? = null
@@ -55,12 +55,12 @@ class UserProfile() : Parcelable {
         return 0
     }
 
-    companion object CREATOR : Parcelable.Creator<UserProfile> {
-        override fun createFromParcel(parcel: Parcel): UserProfile {
-            return UserProfile(parcel)
+    companion object CREATOR : Parcelable.Creator<User> {
+        override fun createFromParcel(parcel: Parcel): User {
+            return User(parcel)
         }
 
-        override fun newArray(size: Int): Array<UserProfile?> {
+        override fun newArray(size: Int): Array<User?> {
             return arrayOfNulls(size)
         }
     }
