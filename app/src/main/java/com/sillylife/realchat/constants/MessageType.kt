@@ -1,0 +1,1 @@
+package com.sillylife.realchat.constantsobject MessageType {    const val PHOTO = "photo"    const val STRING = "string"}

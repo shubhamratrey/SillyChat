@@ -4,6 +4,7 @@ import android.app.Application
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class RealChat : Application() {
     private val mUserDatabase: DatabaseReference? = null
@@ -15,7 +16,7 @@ class RealChat : Application() {
         FirebaseApp.initializeApp(this)
         realChat = this@RealChat
 
-        //FirebaseDatabase.getInstance().setPersistenceEnabled(true)
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true)
         //mAuth = FirebaseAuth.getInstance()
 
 
